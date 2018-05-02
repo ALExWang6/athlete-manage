@@ -15,12 +15,13 @@ public class Task extends Model {
 
     public String object;
 
+    public Task(String user, String action, String object){
 
-//    public static Finder<>
-
-    public static String[] getLast(int x){
-
-        return Task.find.query().where().eq;
+        this.user = user;
+        this.action = action;
+        this.object = object;
 
     }
+
+
 }
