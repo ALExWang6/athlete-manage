@@ -22,6 +22,10 @@ public class Task extends Model {
         this.object = object;
 
     }
-
-
+    
+    public static String getUser(String user) {
+        String firstName = user.substring(0, user.indexOf("."));
+        String lastName = user.substring(user.indexOf(".") + 1, user.indexOf("@") - 2);
+        return firstName + " " + lastName;
+    }
 }
